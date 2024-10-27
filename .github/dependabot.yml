@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "maven" # Cambia a tu gestor de paquetes
+    directory: "/store-app" # Directorio donde está tu archivo de configuración de dependencias
+    schedule:
+      interval: "daily" # Frecuencia de las actualizaciones
