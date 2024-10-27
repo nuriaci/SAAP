@@ -1,0 +1,728 @@
+2024-10-25T11:26:14.464+02:00  INFO 18256 --- [restartedMain] es.storeapp.Application                  : Starting Application using Java 21.0.4 with PID 18256 (C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\target\classes started by nuria in C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app)
+2024-10-25T11:26:14.464+02:00 DEBUG 18256 --- [restartedMain] es.storeapp.Application                  : Running with Spring Boot v3.1.0, Spring v6.0.9
+2024-10-25T11:26:14.464+02:00  INFO 18256 --- [restartedMain] es.storeapp.Application                  : No active profile set, falling back to 1 default profile: "default"
+2024-10-25T11:26:14.704+02:00  INFO 18256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-25T11:26:14.720+02:00  INFO 18256 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2024-10-25T11:26:14.789+02:00  INFO 18256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-10-25T11:26:14.789+02:00  INFO 18256 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-25T11:26:14.790+02:00  INFO 18256 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-10-25T11:26:14.805+02:00  INFO 18256 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-25T11:26:14.805+02:00  INFO 18256 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 341 ms
+2024-10-25T11:26:14.870+02:00  INFO 18256 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-25T11:26:14.875+02:00  INFO 18256 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:26:14.876+02:00  INFO 18256 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-25T11:26:14.878+02:00  INFO 18256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-10-25T11:26:14.878+02:00  WARN 18256 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:26:14.911+02:00  INFO 18256 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-10-25T11:26:14.912+02:00  INFO 18256 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.DerbyDialect, version: 10.16
+2024-10-25T11:26:14.933+02:00  INFO 18256 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:26:15.045+02:00  INFO 18256 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-25T11:26:15.045+02:00  INFO 18256 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:26:15.114+02:00  WARN 18256 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-25T11:26:15.151+02:00  INFO 18256 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-25T11:26:15.444+02:00  INFO 18256 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-25T11:26:15.460+02:00  INFO 18256 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-10-25T11:26:15.477+02:00  INFO 18256 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-10-25T11:26:15.482+02:00  INFO 18256 --- [restartedMain] es.storeapp.Application                  : Started Application in 1.038 seconds (process running for 1415.829)
+2024-10-25T11:26:15.484+02:00  INFO 18256 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-10-25T11:26:26.048+02:00  INFO 18256 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-25T11:26:26.053+02:00 DEBUG 18256 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log started at 2024-10-25T11:26:26.053535600
+2024-10-25T11:26:26.057+02:00 DEBUG 18256 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:26:26.057532600
+2024-10-25T11:26:26.058+02:00 DEBUG 18256 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:26:26.058532
+2024-10-25T11:26:28.498+02:00 DEBUG 18256 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log started at 2024-10-25T11:26:28.498261600
+2024-10-25T11:26:28.501+02:00 DEBUG 18256 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:26:28.501439500
+2024-10-25T11:26:28.501+02:00 DEBUG 18256 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:26:28.501598100
+2024-10-25T11:27:30.727+02:00  INFO 18256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:27:31.263+02:00  WARN 18256 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.sql.SQLException: Directory work/database cannot be removed.
+2024-10-25T11:27:31.263+02:00  INFO 18256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-10-25T11:27:31.263+02:00  INFO 18256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-10-25T11:27:38.726+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : Starting Application using Java 21.0.4 with PID 9536 (C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\target\classes started by nuria in C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app)
+2024-10-25T11:27:38.726+02:00 DEBUG 9536 --- [restartedMain] es.storeapp.Application                  : Running with Spring Boot v3.1.0, Spring v6.0.9
+2024-10-25T11:27:38.726+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : No active profile set, falling back to 1 default profile: "default"
+2024-10-25T11:27:38.776+02:00  INFO 9536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derby\10.16.1.1\derby-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyshared.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_cs.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_de_DE.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_es.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_fr.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_hu.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_it.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ja_JP.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ko_KR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_pl.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_pt_BR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ru.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_zh_CN.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_zh_TW.jar
+2024-10-25T11:27:38.776+02:00  INFO 9536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derbyshared\10.16.1.1\derbyshared-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyshared.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_cs.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_de_DE.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_es.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_fr.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_hu.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_it.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ja_JP.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ko_KR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_pl.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_pt_BR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ru.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_zh_CN.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_zh_TW.jar
+2024-10-25T11:27:38.776+02:00  INFO 9536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derbytools\10.16.1.1\derbytools-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derby.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derbyclient.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derbynet.jar
+2024-10-25T11:27:38.776+02:00  INFO 9536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2024-10-25T11:27:38.789+02:00  INFO 9536 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2024-10-25T11:27:38.789+02:00  INFO 9536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-25T11:27:38.790+02:00  INFO 9536 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-25T11:27:39.573+02:00  INFO 9536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-25T11:27:39.592+02:00  INFO 9536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2024-10-25T11:27:40.080+02:00  INFO 9536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-10-25T11:27:40.091+02:00  INFO 9536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-25T11:27:40.091+02:00  INFO 9536 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-10-25T11:27:40.141+02:00  INFO 9536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-25T11:27:40.141+02:00  INFO 9536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1350 ms
+2024-10-25T11:27:40.459+02:00  INFO 9536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-25T11:27:40.512+02:00  INFO 9536 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-10-25T11:27:40.515+02:00  INFO 9536 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-10-25T11:27:40.605+02:00  INFO 9536 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:27:40.694+02:00  INFO 9536 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-25T11:27:40.708+02:00  INFO 9536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-25T11:27:40.712+02:00  WARN 9536 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:27:40.841+02:00  INFO 9536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-25T11:27:40.874+02:00  INFO 9536 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.DerbyDialect, version: 10.16
+2024-10-25T11:27:41.090+02:00  INFO 9536 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:27:41.640+02:00  INFO 9536 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-25T11:27:41.640+02:00  INFO 9536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:27:41.806+02:00  WARN 9536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-25T11:27:41.912+02:00  INFO 9536 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-25T11:27:42.583+02:00  INFO 9536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-25T11:27:42.589+02:00  INFO 9536 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-10-25T11:27:42.655+02:00  INFO 9536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-10-25T11:27:42.662+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : Started Application in 4.244 seconds (process running for 4.593)
+2024-10-25T11:27:48.524+02:00  INFO 9536 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-25T11:27:48.594+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/work/server.log started at 2024-10-25T11:27:48.594465500
+2024-10-25T11:27:48.692+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/work/server.log finished at 2024-10-25T11:27:48.692120700
+2024-10-25T11:27:48.692+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/work/server.log finished at 2024-10-25T11:27:48.692120700
+2024-10-25T11:27:48.708+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Error started at 2024-10-25T11:27:48.708487100
+2024-10-25T11:27:48.774+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Error finished at 2024-10-25T11:27:48.774469900
+2024-10-25T11:27:49.206+02:00 DEBUG 9536 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Error finished at 2024-10-25T11:27:49.206166500
+2024-10-25T11:27:49.227+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css started at 2024-10-25T11:27:49.226814
+2024-10-25T11:27:49.227+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css started at 2024-10-25T11:27:49.227812200
+2024-10-25T11:27:49.228+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Styles.css started at 2024-10-25T11:27:49.228815300
+2024-10-25T11:27:49.228+02:00 DEBUG 9536 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css started at 2024-10-25T11:27:49.228815300
+2024-10-25T11:27:49.229+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery/jquery.min.js started at 2024-10-25T11:27:49.229817600
+2024-10-25T11:27:49.231+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css started at 2024-10-25T11:27:49.231815100
+2024-10-25T11:27:49.250+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css finished at 2024-10-25T11:27:49.250455100
+2024-10-25T11:27:49.251+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Styles.css finished at 2024-10-25T11:27:49.250455100
+2024-10-25T11:27:49.251+02:00 DEBUG 9536 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css finished at 2024-10-25T11:27:49.251463400
+2024-10-25T11:27:49.252+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css finished at 2024-10-25T11:27:49.252455400
+2024-10-25T11:27:49.252+02:00 DEBUG 9536 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css finished at 2024-10-25T11:27:49.252455400
+2024-10-25T11:27:49.251+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css finished at 2024-10-25T11:27:49.250455100
+2024-10-25T11:27:49.252+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Styles.css finished at 2024-10-25T11:27:49.252455400
+2024-10-25T11:27:49.252+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery/jquery.min.js finished at 2024-10-25T11:27:49.252455400
+2024-10-25T11:27:49.254+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery/jquery.min.js finished at 2024-10-25T11:27:49.254620800
+2024-10-25T11:27:49.253+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css finished at 2024-10-25T11:27:49.253453600
+2024-10-25T11:27:49.253+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css finished at 2024-10-25T11:27:49.253453600
+2024-10-25T11:27:49.256+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js started at 2024-10-25T11:27:49.256594200
+2024-10-25T11:27:49.256+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js started at 2024-10-25T11:27:49.256594200
+2024-10-25T11:27:49.256+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js started at 2024-10-25T11:27:49.256594200
+2024-10-25T11:27:49.257+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css finished at 2024-10-25T11:27:49.256594200
+2024-10-25T11:27:49.261+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js started at 2024-10-25T11:27:49.261613500
+2024-10-25T11:27:49.269+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js started at 2024-10-25T11:27:49.268982100
+2024-10-25T11:27:49.271+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js finished at 2024-10-25T11:27:49.271566
+2024-10-25T11:27:49.272+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js finished at 2024-10-25T11:27:49.272937700
+2024-10-25T11:27:49.275+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js finished at 2024-10-25T11:27:49.275068700
+2024-10-25T11:27:49.275+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js started at 2024-10-25T11:27:49.275426300
+2024-10-25T11:27:49.275+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js finished at 2024-10-25T11:27:49.275988700
+2024-10-25T11:27:49.276+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js finished at 2024-10-25T11:27:49.276252900
+2024-10-25T11:27:49.276+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js started at 2024-10-25T11:27:49.276642900
+2024-10-25T11:27:49.277+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js finished at 2024-10-25T11:27:49.277577
+2024-10-25T11:27:49.276+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js finished at 2024-10-25T11:27:49.276642900
+2024-10-25T11:27:49.277+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js finished at 2024-10-25T11:27:49.277577
+2024-10-25T11:27:49.278+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js finished at 2024-10-25T11:27:49.278516700
+2024-10-25T11:27:49.281+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js finished at 2024-10-25T11:27:49.281624600
+2024-10-25T11:27:49.282+02:00 DEBUG 9536 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js finished at 2024-10-25T11:27:49.281624600
+2024-10-25T11:27:49.283+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js started at 2024-10-25T11:27:49.283537800
+2024-10-25T11:27:49.282+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js finished at 2024-10-25T11:27:49.282941500
+2024-10-25T11:27:49.283+02:00 DEBUG 9536 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js finished at 2024-10-25T11:27:49.283537800
+2024-10-25T11:27:49.284+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js started at 2024-10-25T11:27:49.283537800
+2024-10-25T11:27:49.284+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Scripts.js started at 2024-10-25T11:27:49.284961900
+2024-10-25T11:27:49.284+02:00 DEBUG 9536 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js finished at 2024-10-25T11:27:49.284961900
+2024-10-25T11:27:49.287+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js finished at 2024-10-25T11:27:49.287983700
+2024-10-25T11:27:49.288+02:00 DEBUG 9536 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js finished at 2024-10-25T11:27:49.288892400
+2024-10-25T11:27:49.288+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Scripts.js finished at 2024-10-25T11:27:49.288484500
+2024-10-25T11:27:49.289+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js finished at 2024-10-25T11:27:49.289029400
+2024-10-25T11:27:49.289+02:00 DEBUG 9536 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Scripts.js finished at 2024-10-25T11:27:49.289333900
+2024-10-25T11:27:49.289+02:00 DEBUG 9536 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js finished at 2024-10-25T11:27:49.289333900
+2024-10-25T11:27:49.359+02:00 DEBUG 9536 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 started at 2024-10-25T11:27:49.359703300
+2024-10-25T11:27:49.360+02:00 DEBUG 9536 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 finished at 2024-10-25T11:27:49.360214200
+2024-10-25T11:27:49.360+02:00 DEBUG 9536 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 finished at 2024-10-25T11:27:49.360214200
+2024-10-25T11:27:56.724+02:00 DEBUG 9536 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log started at 2024-10-25T11:27:56.723729300
+2024-10-25T11:27:56.728+02:00 DEBUG 9536 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:27:56.727061600
+2024-10-25T11:27:56.729+02:00 DEBUG 9536 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:27:56.729060
+2024-10-25T11:30:30.268+02:00  INFO 9536 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-25T11:30:30.275+02:00  INFO 9536 --- [Thread-17] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-10-25T11:30:30.276+02:00  INFO 9536 --- [Thread-17] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-10-25T11:30:30.288+02:00  INFO 9536 --- [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:30:30.827+02:00  WARN 9536 --- [Thread-17] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.sql.SQLException: Directory work/database cannot be removed.
+2024-10-25T11:30:30.828+02:00  INFO 9536 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-10-25T11:30:30.830+02:00  INFO 9536 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-10-25T11:30:30.900+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : Starting Application using Java 21.0.4 with PID 9536 (C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\target\classes started by nuria in C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app)
+2024-10-25T11:30:30.901+02:00 DEBUG 9536 --- [restartedMain] es.storeapp.Application                  : Running with Spring Boot v3.1.0, Spring v6.0.9
+2024-10-25T11:30:30.901+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : No active profile set, falling back to 1 default profile: "default"
+2024-10-25T11:30:31.098+02:00  INFO 9536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-25T11:30:31.103+02:00  INFO 9536 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JPA repository interfaces.
+2024-10-25T11:30:31.159+02:00  INFO 9536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-10-25T11:30:31.160+02:00  INFO 9536 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-25T11:30:31.161+02:00  INFO 9536 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-10-25T11:30:31.177+02:00  INFO 9536 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-25T11:30:31.178+02:00  INFO 9536 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 275 ms
+2024-10-25T11:30:31.227+02:00  INFO 9536 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-25T11:30:31.231+02:00  INFO 9536 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:30:31.232+02:00  INFO 9536 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-25T11:30:31.234+02:00  INFO 9536 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-10-25T11:30:31.234+02:00  WARN 9536 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:30:31.236+02:00  WARN 9536 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.RuntimeException: Driver org.apache.derby.jdbc.EmbeddedDriver claims to not accept jdbcUrl, jdbc:derby/database
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:229) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:197) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294) ~[spring-boot-3.1.0.jar:3.1.0]
+	at es.storeapp.Application.main(Application.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2024-10-25T11:30:31.245+02:00  INFO 9536 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.DerbyDialect, version: 10.14.2
+2024-10-25T11:30:31.274+02:00  INFO 9536 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:30:31.346+02:00  INFO 9536 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-25T11:30:31.346+02:00  INFO 9536 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:30:31.411+02:00  WARN 9536 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-25T11:30:31.441+02:00  INFO 9536 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-25T11:30:31.726+02:00  INFO 9536 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-25T11:30:31.728+02:00  INFO 9536 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-10-25T11:30:31.741+02:00  INFO 9536 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-10-25T11:30:31.745+02:00  INFO 9536 --- [restartedMain] es.storeapp.Application                  : Started Application in 0.866 seconds (process running for 173.675)
+2024-10-25T11:30:31.747+02:00  INFO 9536 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-10-25T11:31:00.417+02:00  INFO 9536 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:31:00.418+02:00  INFO 9536 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-10-25T11:31:00.418+02:00  WARN 9536 --- [SpringApplicationShutdownHook] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:31:00.419+02:00  WARN 9536 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.lang.RuntimeException: Driver org.apache.derby.jdbc.EmbeddedDriver claims to not accept jdbcUrl, jdbc:derby/database
+2024-10-25T11:31:07.625+02:00  INFO 6824 --- [restartedMain] es.storeapp.Application                  : Starting Application using Java 21.0.4 with PID 6824 (C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\target\classes started by nuria in C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app)
+2024-10-25T11:31:07.626+02:00 DEBUG 6824 --- [restartedMain] es.storeapp.Application                  : Running with Spring Boot v3.1.0, Spring v6.0.9
+2024-10-25T11:31:07.627+02:00  INFO 6824 --- [restartedMain] es.storeapp.Application                  : No active profile set, falling back to 1 default profile: "default"
+2024-10-25T11:31:07.664+02:00  INFO 6824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derby\10.16.1.1\derby-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyshared.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_cs.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_de_DE.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_es.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_fr.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_hu.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_it.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ja_JP.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ko_KR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_pl.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_pt_BR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_ru.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_zh_CN.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derbyLocale_zh_TW.jar
+2024-10-25T11:31:07.666+02:00  INFO 6824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derbyshared\10.16.1.1\derbyshared-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyshared.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_cs.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_de_DE.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_es.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_fr.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_hu.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_it.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ja_JP.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ko_KR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_pl.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_pt_BR.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_ru.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_zh_CN.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbyshared/10.16.1.1/derbyLocale_zh_TW.jar
+2024-10-25T11:31:07.667+02:00  INFO 6824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\org\apache\derby\derbytools\10.16.1.1\derbytools-10.16.1.1.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derby.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derbyclient.jar,file:/C:/Users/nuria/.m2/repository/org/apache/derby/derbytools/10.16.1.1/derbynet.jar
+2024-10-25T11:31:07.667+02:00  INFO 6824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0\jaxb-core-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-api.jar
+2024-10-25T11:31:07.668+02:00  INFO 6824 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\nuria\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.0\jaxb-impl-2.3.0.jar referenced one or more files that do not exist: file:/C:/Users/nuria/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-core.jar
+2024-10-25T11:31:07.668+02:00  INFO 6824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-25T11:31:07.668+02:00  INFO 6824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-25T11:31:08.271+02:00  INFO 6824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-25T11:31:08.290+02:00  INFO 6824 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2024-10-25T11:31:08.693+02:00  INFO 6824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2024-10-25T11:31:08.700+02:00  INFO 6824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-10-25T11:31:08.702+02:00  INFO 6824 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-10-25T11:31:08.748+02:00  INFO 6824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-10-25T11:31:08.749+02:00  INFO 6824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1080 ms
+2024-10-25T11:31:09.048+02:00  INFO 6824 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-25T11:31:09.079+02:00  INFO 6824 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-10-25T11:31:09.081+02:00  INFO 6824 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2024-10-25T11:31:09.161+02:00  INFO 6824 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:31:09.242+02:00  INFO 6824 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-25T11:31:09.253+02:00  INFO 6824 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-25T11:31:09.256+02:00  WARN 6824 --- [restartedMain] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:31:09.257+02:00  WARN 6824 --- [restartedMain] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+java.lang.RuntimeException: Driver org.apache.derby.jdbc.EmbeddedDriver claims to not accept jdbcUrl, jdbc:derby/database
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:316) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:34) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:119) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:264) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:239) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:216) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:229) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:197) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:166) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1380) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1451) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1156) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:931) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.9.jar:6.0.9]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:733) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:435) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1305) ~[spring-boot-3.1.0.jar:3.1.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1294) ~[spring-boot-3.1.0.jar:3.1.0]
+	at es.storeapp.Application.main(Application.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.1.0.jar:3.1.0]
+
+2024-10-25T11:31:09.275+02:00  INFO 6824 --- [restartedMain] org.hibernate.orm.dialect                : HHH035001: Using dialect: org.hibernate.dialect.DerbyDialect, version: 10.14.2
+2024-10-25T11:31:09.437+02:00  INFO 6824 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2024-10-25T11:31:09.911+02:00  INFO 6824 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-10-25T11:31:09.914+02:00  INFO 6824 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:31:10.029+02:00  WARN 6824 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-25T11:31:10.126+02:00  INFO 6824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-25T11:31:10.644+02:00  INFO 6824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-10-25T11:31:10.649+02:00  INFO 6824 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-10-25T11:31:10.698+02:00  INFO 6824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path ''
+2024-10-25T11:31:10.706+02:00  INFO 6824 --- [restartedMain] es.storeapp.Application                  : Started Application in 3.371 seconds (process running for 3.673)
+2024-10-25T11:31:19.214+02:00  INFO 6824 --- [http-nio-8888-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-25T11:31:19.281+02:00 DEBUG 6824 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log started at 2024-10-25T11:31:19.281861800
+2024-10-25T11:31:19.364+02:00 DEBUG 6824 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:31:19.364638
+2024-10-25T11:31:19.380+02:00 DEBUG 6824 --- [http-nio-8888-exec-5] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/resources/server.log finished at 2024-10-25T11:31:19.380881600
+2024-10-25T11:31:25.389+02:00 DEBUG 6824 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/ started at 2024-10-25T11:31:25.389417200
+2024-10-25T11:31:25.415+02:00  INFO 6824 --- [http-nio-8888-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-25T11:31:25.415+02:00  WARN 6824 --- [http-nio-8888-exec-2] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:31:25.415+02:00 DEBUG 6824 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/ finished at 2024-10-25T11:31:25.415359200
+2024-10-25T11:31:25.430+02:00 ERROR 6824 --- [http-nio-8888-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.transaction.CannotCreateTransactionException: Could not open JPA EntityManager for transaction] with root cause
+
+java.lang.RuntimeException: Driver org.apache.derby.jdbc.EmbeddedDriver claims to not accept jdbcUrl, jdbc:derby/database
+	at com.zaxxer.hikari.util.DriverDataSource.<init>(DriverDataSource.java:110) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.initializeDataSource(PoolBase.java:326) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.<init>(PoolBase.java:112) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:93) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.internal.NonContextualJdbcConnectionAccess.obtainConnection(NonContextualJdbcConnectionAccess.java:38) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.acquireConnectionIfNeeded(LogicalConnectionManagedImpl.java:113) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.hibernate.resource.jdbc.internal.LogicalConnectionManagedImpl.getPhysicalConnection(LogicalConnectionManagedImpl.java:143) ~[hibernate-core-6.2.2.Final.jar:6.2.2.Final]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.beginTransaction(HibernateJpaDialect.java:152) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.orm.jpa.JpaTransactionManager.doBegin(JpaTransactionManager.java:420) ~[spring-orm-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.startTransaction(AbstractPlatformTransactionManager.java:400) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.getTransaction(AbstractPlatformTransactionManager.java:373) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.createTransactionIfNecessary(TransactionAspectSupport.java:601) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750) ~[spring-aop-6.0.9.jar:6.0.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702) ~[spring-aop-6.0.9.jar:6.0.9]
+	at es.storeapp.business.services.ProductService$$SpringCGLIB$$0.findHighlightedCategories(<generated>) ~[classes/:na]
+	at es.storeapp.web.controller.HomeController.doGetHome(HomeController.java:26) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-25T11:31:25.447+02:00 DEBUG 6824 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Error started at 2024-10-25T11:31:25.447941400
+2024-10-25T11:31:25.481+02:00 DEBUG 6824 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Error finished at 2024-10-25T11:31:25.481278500
+2024-10-25T11:31:25.963+02:00 ERROR 6824 --- [http-nio-8888-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8888-exec-2] Exception processing template "error": An error happened during template parsing (template: "class path resource [templates/error.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:358) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:304) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "exception instanceof T(java.lang.Exception)" (template: "error" - line 31, col 18)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 50 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "exception instanceof T(java.lang.Exception)" (template: "error" - line 31, col 18)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	... 52 common frames omitted
+Caused by: org.springframework.expression.EvaluationException: Access is forbidden for type 'java.lang.Exception' in Thymeleaf expressions. Blocked classes are: [com.sun.*, jakarta.*, java.*, javax.*, jdk.*, org.ietf.jgss.*, org.omg.*, org.w3c.dom.*, org.xml.sax.*, sun.*]. Allowed classes are: [java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Iterable, java.lang.Long, java.lang.Math, java.lang.Number, java.lang.Short, java.lang.String, java.math.BigDecimal, java.math.BigInteger, java.math.RoundingMode, java.time.*, java.util.ArrayList, java.util.Calendar, java.util.Calendar, java.util.Collection, java.util.Date, java.util.Enumeration, java.util.HashMap, java.util.HashSet, java.util.Iterator, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Map$Entry, java.util.Optional, java.util.Properties, java.util.Set, java.util.stream.Stream].
+	at org.thymeleaf.spring6.expression.ThymeleafEvaluationContext$ThymeleafEvaluationContextACLTypeLocator.findType(ThymeleafEvaluationContext.java:191) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.expression.spel.ExpressionState.findType(ExpressionState.java:180) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.TypeReference.getValueInternal(TypeReference.java:70) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:61) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:38) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 73 common frames omitted
+
+2024-10-25T11:31:26.003+02:00 DEBUG 6824 --- [http-nio-8888-exec-2] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Error finished at 2024-10-25T11:31:26.003230200
+2024-10-25T11:31:26.005+02:00 ERROR 6824 --- [http-nio-8888-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.expression.EvaluationException: Access is forbidden for type 'java.lang.Exception' in Thymeleaf expressions. Blocked classes are: [com.sun.*, jakarta.*, java.*, javax.*, jdk.*, org.ietf.jgss.*, org.omg.*, org.w3c.dom.*, org.xml.sax.*, sun.*]. Allowed classes are: [java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Iterable, java.lang.Long, java.lang.Math, java.lang.Number, java.lang.Short, java.lang.String, java.math.BigDecimal, java.math.BigInteger, java.math.RoundingMode, java.time.*, java.util.ArrayList, java.util.Calendar, java.util.Calendar, java.util.Collection, java.util.Date, java.util.Enumeration, java.util.HashMap, java.util.HashSet, java.util.Iterator, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Map$Entry, java.util.Optional, java.util.Properties, java.util.Set, java.util.stream.Stream].
+	at org.thymeleaf.spring6.expression.ThymeleafEvaluationContext$ThymeleafEvaluationContextACLTypeLocator.findType(ThymeleafEvaluationContext.java:191) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.expression.spel.ExpressionState.findType(ExpressionState.java:180) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.TypeReference.getValueInternal(TypeReference.java:70) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:61) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:38) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:358) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:304) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2024-10-25T11:31:26.028+02:00 ERROR 6824 --- [http-nio-8888-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/Error]
+
+jakarta.servlet.ServletException: Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1019) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.8.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:101) ~[spring-web-6.0.9.jar:6.0.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:410) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:358) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:222) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:304) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:149) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.8.jar:10.1.8]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/error.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1415) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1159) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1098) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.9.jar:6.0.9]
+	... 39 common frames omitted
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "exception instanceof T(java.lang.Exception)" (template: "error" - line 31, col 18)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 50 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "exception instanceof T(java.lang.Exception)" (template: "error" - line 31, col 18)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.6.RELEASE.jar:2.0.6.RELEASE]
+	... 52 common frames omitted
+Caused by: org.springframework.expression.EvaluationException: Access is forbidden for type 'java.lang.Exception' in Thymeleaf expressions. Blocked classes are: [com.sun.*, jakarta.*, java.*, javax.*, jdk.*, org.ietf.jgss.*, org.omg.*, org.w3c.dom.*, org.xml.sax.*, sun.*]. Allowed classes are: [java.lang.Boolean, java.lang.Byte, java.lang.Character, java.lang.Double, java.lang.Enum, java.lang.Float, java.lang.Integer, java.lang.Iterable, java.lang.Long, java.lang.Math, java.lang.Number, java.lang.Short, java.lang.String, java.math.BigDecimal, java.math.BigInteger, java.math.RoundingMode, java.time.*, java.util.ArrayList, java.util.Calendar, java.util.Calendar, java.util.Collection, java.util.Date, java.util.Enumeration, java.util.HashMap, java.util.HashSet, java.util.Iterator, java.util.LinkedHashMap, java.util.LinkedHashSet, java.util.LinkedList, java.util.List, java.util.Locale, java.util.Map, java.util.Map$Entry, java.util.Optional, java.util.Properties, java.util.Set, java.util.stream.Stream].
+	at org.thymeleaf.spring6.expression.ThymeleafEvaluationContext$ThymeleafEvaluationContextACLTypeLocator.findType(ThymeleafEvaluationContext.java:191) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	at org.springframework.expression.spel.ExpressionState.findType(ExpressionState.java:180) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.TypeReference.getValueInternal(TypeReference.java:70) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:61) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.OperatorInstanceof.getValueInternal(OperatorInstanceof.java:38) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:114) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.0.9.jar:6.0.9]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265) ~[thymeleaf-spring6-3.1.1.RELEASE.jar:3.1.1.RELEASE]
+	... 73 common frames omitted
+
+2024-10-25T11:31:26.089+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css started at 2024-10-25T11:31:26.089597800
+2024-10-25T11:31:26.092+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css started at 2024-10-25T11:31:26.092597800
+2024-10-25T11:31:26.092+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery/jquery.min.js started at 2024-10-25T11:31:26.092597800
+2024-10-25T11:31:26.092+02:00 DEBUG 6824 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css started at 2024-10-25T11:31:26.092597800
+2024-10-25T11:31:26.093+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css started at 2024-10-25T11:31:26.092597800
+2024-10-25T11:31:26.093+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Styles.css started at 2024-10-25T11:31:26.093596800
+2024-10-25T11:31:26.106+02:00 DEBUG 6824 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css finished at 2024-10-25T11:31:26.106476600
+2024-10-25T11:31:26.107+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css finished at 2024-10-25T11:31:26.107470600
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-8] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/css/dataTables.bootstrap4.min.css finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.107+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Styles.css finished at 2024-10-25T11:31:26.107470600
+2024-10-25T11:31:26.107+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css finished at 2024-10-25T11:31:26.107788500
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css finished at 2024-10-25T11:31:26.107788500
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap-star-rating/css/star-rating.min.css finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery/jquery.min.js finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Styles.css finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/theme-default.min.css finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.108+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap/css/bootstrap.css finished at 2024-10-25T11:31:26.108529900
+2024-10-25T11:31:26.110+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery/jquery.min.js finished at 2024-10-25T11:31:26.110602700
+2024-10-25T11:31:26.113+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js started at 2024-10-25T11:31:26.113111700
+2024-10-25T11:31:26.112+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js started at 2024-10-25T11:31:26.112687
+2024-10-25T11:31:26.113+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js started at 2024-10-25T11:31:26.113111700
+2024-10-25T11:31:26.114+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js started at 2024-10-25T11:31:26.114124700
+2024-10-25T11:31:26.116+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js started at 2024-10-25T11:31:26.116651
+2024-10-25T11:31:26.116+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js started at 2024-10-25T11:31:26.116651
+2024-10-25T11:31:26.122+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js finished at 2024-10-25T11:31:26.122444100
+2024-10-25T11:31:26.121+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js finished at 2024-10-25T11:31:26.121914900
+2024-10-25T11:31:26.122+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js finished at 2024-10-25T11:31:26.122444100
+2024-10-25T11:31:26.123+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery-form-validator/form-validator/jquery.form-validator.min.js finished at 2024-10-25T11:31:26.123140300
+2024-10-25T11:31:26.123+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js finished at 2024-10-25T11:31:26.123140300
+2024-10-25T11:31:26.123+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js finished at 2024-10-25T11:31:26.123140300
+2024-10-25T11:31:26.126+02:00 DEBUG 6824 --- [http-nio-8888-exec-6] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables-responsive/js/dataTables.responsive.js finished at 2024-10-25T11:31:26.126156
+2024-10-25T11:31:26.123+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap/js/bootstrap.min.js finished at 2024-10-25T11:31:26.123140300
+2024-10-25T11:31:26.125+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/js/dataTables.bootstrap4.min.js finished at 2024-10-25T11:31:26.125162700
+2024-10-25T11:31:26.128+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js started at 2024-10-25T11:31:26.128107700
+2024-10-25T11:31:26.132+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js started at 2024-10-25T11:31:26.132486300
+2024-10-25T11:31:26.133+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js finished at 2024-10-25T11:31:26.133297700
+2024-10-25T11:31:26.126+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables/js/jquery.dataTables.min.js finished at 2024-10-25T11:31:26.126336500
+2024-10-25T11:31:26.132+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js started at 2024-10-25T11:31:26.132896300
+2024-10-25T11:31:26.133+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js finished at 2024-10-25T11:31:26.132486300
+2024-10-25T11:31:26.134+02:00 DEBUG 6824 --- [http-nio-8888-exec-10] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/datatables-responsive/js/responsive.bootstrap4.js finished at 2024-10-25T11:31:26.134054100
+2024-10-25T11:31:26.135+02:00 DEBUG 6824 --- [http-nio-8888-exec-9] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/font-awesome/svg-with-js/js/fontawesome-all.js finished at 2024-10-25T11:31:26.135593
+2024-10-25T11:31:26.136+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Scripts.js started at 2024-10-25T11:31:26.136644600
+2024-10-25T11:31:26.136+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js finished at 2024-10-25T11:31:26.136644600
+2024-10-25T11:31:26.138+02:00 DEBUG 6824 --- [http-nio-8888-exec-3] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/bootstrap-star-rating/js/star-rating.min.js finished at 2024-10-25T11:31:26.138001800
+2024-10-25T11:31:26.139+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js finished at 2024-10-25T11:31:26.139207700
+2024-10-25T11:31:26.140+02:00 DEBUG 6824 --- [http-nio-8888-exec-4] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/webjars/jquery.inputmask/min/jquery.inputmask.bundle.min.js finished at 2024-10-25T11:31:26.140087100
+2024-10-25T11:31:26.140+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/Scripts.js finished at 2024-10-25T11:31:26.140087100
+2024-10-25T11:31:26.141+02:00 DEBUG 6824 --- [http-nio-8888-exec-7] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/Scripts.js finished at 2024-10-25T11:31:26.141189400
+2024-10-25T11:31:26.217+02:00 DEBUG 6824 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 started at 2024-10-25T11:31:26.217135400
+2024-10-25T11:31:26.237+02:00 DEBUG 6824 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : Request URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 finished at 2024-10-25T11:31:26.237944700
+2024-10-25T11:31:26.239+02:00 DEBUG 6824 --- [http-nio-8888-exec-1] e.s.web.interceptors.LoggerInterceptor   : After completion URL: http://localhost:8888/fonts/raleway-v12-latin-regular.woff2 finished at 2024-10-25T11:31:26.239938500
+2024-10-25T11:32:35.970+02:00  INFO 6824 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-10-25T11:32:35.978+02:00  INFO 6824 --- [Thread-6] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-10-25T11:32:35.979+02:00  INFO 6824 --- [Thread-6] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-10-25T11:32:35.988+02:00  INFO 6824 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-25T11:32:35.990+02:00  INFO 6824 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-25T11:32:35.991+02:00  WARN 6824 --- [Thread-6] c.zaxxer.hikari.util.DriverDataSource    : Registered driver with driverClassName=org.apache.derby.jdbc.EmbeddedDriver was not found, trying direct instantiation.
+2024-10-25T11:32:35.992+02:00  WARN 6824 --- [Thread-6] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.lang.RuntimeException: Driver org.apache.derby.jdbc.EmbeddedDriver claims to not accept jdbcUrl, jdbc:derby/database

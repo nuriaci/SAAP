@@ -1,0 +1,545 @@
+----------------------------------------------------------------
+Fri Oct 25 16:05:31 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance a816c00e-0192-c3ff-2142-0000039dc448 
+on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Loaded from file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.4+7-LTS
+user.dir=C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+Fri Oct 25 16:05:49 CEST 2024 Thread[#441,http-nio-8888-exec-1,5,main] (XID = 4495), (SESSIONID = 3), (DATABASE = work/database), (DRDAID = null), Cleanup action starting
+Fri Oct 25 16:05:49 CEST 2024 Thread[#441,http-nio-8888-exec-1,5,main] (XID = 4495), (SESSIONID = 3), (DATABASE = work/database), (DRDAID = null), Failed Statement is: select c1_0.category_id,c1_0.description,c1_0.highlighted,c1_0.icon,c1_0.name from categories c1_0 where c1_0.highlighted=true
+ERROR 08000: Connection closed by unknown interrupt.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.util.InterruptStatus.setInterrupted(InterruptStatus.java:95)
+	at org.apache.derby.iapi.util.InterruptStatus.throwIf(InterruptStatus.java:291)
+	at org.apache.derby.impl.sql.execute.BasicNoPutResultSetImpl.checkCancellationFlag(BasicNoPutResultSetImpl.java:1022)
+	at org.apache.derby.impl.sql.execute.BulkTableScanResultSet.getNextRowCore(BulkTableScanResultSet.java:350)
+	at org.apache.derby.impl.sql.execute.BasicNoPutResultSetImpl.getNextRow(BasicNoPutResultSetImpl.java:486)
+	at org.apache.derby.impl.jdbc.EmbedResultSet.movePosition(EmbedResultSet.java:447)
+	at org.apache.derby.impl.jdbc.EmbedResultSet.next(EmbedResultSet.java:391)
+	at com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:204)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:84)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:65)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:198)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:362)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:109)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:302)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:243)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:518)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367)
+	at org.hibernate.query.Query.getResultList(Query.java:119)
+	at es.storeapp.business.repositories.CategoryRepository.findHighlighted(CategoryRepository.java:16)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at es.storeapp.business.repositories.CategoryRepository$$SpringCGLIB$$0.findHighlighted(<generated>)
+	at es.storeapp.business.services.ProductService.findHighlightedCategories(ProductService.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	at es.storeapp.business.services.ProductService$$SpringCGLIB$$0.findHighlightedCategories(<generated>)
+	at es.storeapp.web.controller.HomeController.doGetHome(HomeController.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+---------------
+Stack traces for all live threads:
+Thread name=HikariPool-1 housekeeper id=45 priority=5 state=TIMED_WAITING isdaemon=true
+	java.base@21.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	java.base@21.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=Live Reload Server id=440 priority=5 state=RUNNABLE isdaemon=true
+	java.base@21.0.4/sun.nio.ch.Net.accept(Native Method)
+	java.base@21.0.4/sun.nio.ch.NioSocketImpl.accept(NioSocketImpl.java:748)
+	java.base@21.0.4/java.net.ServerSocket.implAccept(ServerSocket.java:698)
+	java.base@21.0.4/java.net.ServerSocket.platformImplAccept(ServerSocket.java:663)
+	java.base@21.0.4/java.net.ServerSocket.implAccept(ServerSocket.java:639)
+	java.base@21.0.4/java.net.ServerSocket.implAccept(ServerSocket.java:585)
+	java.base@21.0.4/java.net.ServerSocket.accept(ServerSocket.java:543)
+	app//org.springframework.boot.devtools.livereload.LiveReloadServer.acceptConnections(LiveReloadServer.java:145)
+	app//org.springframework.boot.devtools.livereload.LiveReloadServer$$Lambda/0x0000028a178f3db0.run(Unknown Source)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=DestroyJavaVM id=453 priority=5 state=RUNNABLE isdaemon=false
+
+Thread name=Thread-17 id=439 priority=5 state=TIMED_WAITING isdaemon=false
+	java.base@21.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	java.base@21.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+	app//org.apache.tomcat.util.threads.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1558)
+	app//org.apache.tomcat.util.net.AbstractEndpoint.shutdownExecutor(AbstractEndpoint.java:1044)
+	app//org.apache.tomcat.util.net.NioEndpoint.stopInternal(NioEndpoint.java:319)
+	app//org.apache.tomcat.util.net.AbstractEndpoint.stop(AbstractEndpoint.java:1384)
+	app//org.apache.coyote.AbstractProtocol.stop(AbstractProtocol.java:712)
+	app//org.apache.catalina.connector.Connector.stopInternal(Connector.java:1060)
+	app//org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	app//org.apache.catalina.core.StandardService.stopInternal(StandardService.java:504)
+	app//org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	app//org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:966)
+	app//org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257)
+	app//org.apache.catalina.startup.Tomcat.stop(Tomcat.java:495)
+	app//org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:273)
+	app//org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:331)
+	app//org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.stop(WebServerStartStopLifecycle.java:53)
+	app//org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:117)
+	app//org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:234)
+	app//org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:373)
+	app//org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:206)
+	app//org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:129)
+	app//org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1069)
+	app//org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:173)
+	app//org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1027)
+	app//org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	app//org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	app//org.springframework.boot.devtools.restart.Restarter$$Lambda/0x0000028a17939570.call(Unknown Source)
+	app//org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:614)
+
+Thread name=Reference Handler id=9 priority=10 state=RUNNABLE isdaemon=true
+	java.base@21.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+	java.base@21.0.4/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+	java.base@21.0.4/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+Thread name=derby.rawStoreDaemon id=44 priority=5 state=TIMED_WAITING isdaemon=true
+	java.base@21.0.4/java.lang.Object.wait0(Native Method)
+	java.base@21.0.4/java.lang.Object.wait(Object.java:366)
+	app//org.apache.derby.impl.services.daemon.BasicDaemon.rest(BasicDaemon.java:577)
+	app//org.apache.derby.impl.services.daemon.BasicDaemon.run(BasicDaemon.java:391)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=Finalizer id=10 priority=8 state=WAITING isdaemon=true
+	java.base@21.0.4/java.lang.Object.wait0(Native Method)
+	java.base@21.0.4/java.lang.Object.wait(Object.java:366)
+	java.base@21.0.4/java.lang.Object.wait(Object.java:339)
+	java.base@21.0.4/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+	java.base@21.0.4/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+	java.base@21.0.4/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+	java.base@21.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+Thread name=Common-Cleaner id=20 priority=8 state=TIMED_WAITING isdaemon=true
+	java.base@21.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	java.base@21.0.4/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+	java.base@21.0.4/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+	java.base@21.0.4/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+	java.base@21.0.4/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+	java.base@21.0.4/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+	java.base@21.0.4/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+Thread name=container-0 id=41 priority=5 state=TIMED_WAITING isdaemon=false
+	java.base@21.0.4/java.lang.Thread.sleep0(Native Method)
+	java.base@21.0.4/java.lang.Thread.sleep(Thread.java:509)
+	app//org.apache.catalina.core.StandardServer.await(StandardServer.java:563)
+	app//org.springframework.boot.web.embedded.tomcat.TomcatWebServer$1.run(TomcatWebServer.java:197)
+
+Thread name=Attach Listener id=12 priority=5 state=RUNNABLE isdaemon=true
+
+Thread name=Catalina-utility-1 id=39 priority=1 state=WAITING isdaemon=false
+	java.base@21.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	java.base@21.0.4/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	java.base@21.0.4/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	java.base@21.0.4/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1177)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=Catalina-utility-2 id=40 priority=1 state=WAITING isdaemon=false
+	java.base@21.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+	java.base@21.0.4/java.util.concurrent.locks.LockSupport.park(LockSupport.java:371)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:519)
+	java.base@21.0.4/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	java.base@21.0.4/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	java.base@21.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1707)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1170)
+	java.base@21.0.4/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	java.base@21.0.4/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=Notification Thread id=19 priority=9 state=RUNNABLE isdaemon=true
+
+Thread name=http-nio-8888-exec-1 id=441 priority=5 state=RUNNABLE isdaemon=true
+	java.base@21.0.4/java.lang.Thread.dumpThreads(Native Method)
+	java.base@21.0.4/java.lang.Thread.getAllStackTraces(Thread.java:2521)
+	app//org.apache.derby.shared.common.sanity.ThreadDump.getStackDumpString(ThreadDump.java:34)
+	java.base@21.0.4/java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x0000028a17008400.invoke(LambdaForm$MH)
+	java.base@21.0.4/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	app//org.apache.derby.shared.common.error.ExceptionUtil.dumpThreads(ExceptionUtil.java:159)
+	app//org.apache.derby.iapi.services.context.ContextManager.cleanupOnError(ContextManager.java:356)
+	app//org.apache.derby.impl.jdbc.TransactionResourceImpl.cleanupOnError(TransactionResourceImpl.java:469)
+	app//org.apache.derby.impl.jdbc.TransactionResourceImpl.handleException(TransactionResourceImpl.java:351)
+	app//org.apache.derby.impl.jdbc.EmbedConnection.handleException(EmbedConnection.java:2400)
+	app//org.apache.derby.impl.jdbc.ConnectionChild.handleException(ConnectionChild.java:86)
+	app//org.apache.derby.impl.jdbc.EmbedResultSet.closeOnTransactionError(EmbedResultSet.java:4660)
+	app//org.apache.derby.impl.jdbc.EmbedResultSet.movePosition(EmbedResultSet.java:487)
+	app//org.apache.derby.impl.jdbc.EmbedResultSet.next(EmbedResultSet.java:391)
+	app//com.zaxxer.hikari.pool.HikariProxyResultSet.next(HikariProxyResultSet.java)
+	app//org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:204)
+	app//org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:84)
+	app//org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:29)
+	app//org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:65)
+	app//org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:198)
+	app//org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	app//org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:362)
+	app//org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:168)
+	app//org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.list(JdbcSelectExecutorStandardImpl.java:93)
+	app//org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:31)
+	app//org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$0(ConcreteSqmSelectQueryPlan.java:109)
+	app//org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan$$Lambda/0x0000028a179f9048.interpret(Unknown Source)
+	app//org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:302)
+	app//org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:243)
+	app//org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:518)
+	app//org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:367)
+	app//org.hibernate.query.Query.getResultList(Query.java:119)
+	es.storeapp.business.repositories.CategoryRepository.findHighlighted(CategoryRepository.java:16)
+	java.base@21.0.4/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x0000028a17034000.invoke(LambdaForm$MH)
+	java.base@21.0.4/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	app//org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	app//org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	es.storeapp.business.repositories.CategoryRepository$$SpringCGLIB$$0.findHighlighted(<generated>)
+	es.storeapp.business.services.ProductService.findHighlightedCategories(ProductService.java:69)
+	java.base@21.0.4/java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(DirectMethodHandle$Holder)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x0000028a17034000.invoke(LambdaForm$MH)
+	java.base@21.0.4/java.lang.invoke.Invokers$Holder.invokeExact_MT(Invokers$Holder)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:153)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	app//org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	app//org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	app//org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:391)
+	app//org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:750)
+	app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:702)
+	es.storeapp.business.services.ProductService$$SpringCGLIB$$0.findHighlightedCategories(<generated>)
+	es.storeapp.web.controller.HomeController.doGetHome(HomeController.java:26)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$DMH/0x0000028a17279000.invokeVirtual(LambdaForm$DMH)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x0000028a17438800.invoke(LambdaForm$MH)
+	java.base@21.0.4/java.lang.invoke.LambdaForm$MH/0x0000028a17105c00.invokeExact_MT(LambdaForm$MH)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:155)
+	java.base@21.0.4/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	java.base@21.0.4/java.lang.reflect.Method.invoke(Method.java:580)
+	app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
+	app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
+	app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+	app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+	app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:109)
+	app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	app//org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	app//org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	app//org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	app//org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	app//org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	app//org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	app//org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	app//org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+	app//org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	app//org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	app//org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	app//org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	app//org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	app//org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	java.base@21.0.4/java.lang.Thread.runWith(Thread.java:1596)
+	java.base@21.0.4/java.lang.Thread.run(Thread.java:1583)
+
+Thread name=Signal Dispatcher id=11 priority=9 state=RUNNABLE isdaemon=true
+
+Thread name=Timer-0 id=42 priority=5 state=WAITING isdaemon=true
+	java.base@21.0.4/java.lang.Object.wait0(Native Method)
+	java.base@21.0.4/java.lang.Object.wait(Object.java:366)
+	java.base@21.0.4/java.lang.Object.wait(Object.java:339)
+	java.base@21.0.4/java.util.TimerThread.mainLoop(Timer.java:537)
+	java.base@21.0.4/java.util.TimerThread.run(Timer.java:516)
+
+
+---------------
+
+Cleanup action completed
+----------------------------------------------------------------
+Fri Oct 25 16:05:49 CEST 2024:
+Shutting down instance a816c00e-0192-c3ff-2142-0000039dc448 on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Fri Oct 25 16:05:50 CEST 2024 Thread[#458,Thread-21,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+Fri Oct 25 16:05:50 CEST 2024 Thread[#458,Thread-21,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+----------------------------------------------------------------
+Fri Oct 25 16:05:53 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance 08264012-0192-c3ff-2142-0000039dc448 
+on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Loaded from file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.4+7-LTS
+user.dir=C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Oct 25 16:05:56 CEST 2024:
+Shutting down instance 08264012-0192-c3ff-2142-0000039dc448 on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Fri Oct 25 16:05:57 CEST 2024 Thread[#874,Thread-37,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+Fri Oct 25 16:05:57 CEST 2024 Thread[#874,Thread-37,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+----------------------------------------------------------------
+Fri Oct 25 16:05:58 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance 6839c016-0192-c3ff-2142-0000039dc448 
+on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Loaded from file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.4+7-LTS
+user.dir=C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Oct 25 16:15:41 CEST 2024:
+Shutting down instance 6839c016-0192-c3ff-2142-0000039dc448 on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Fri Oct 25 16:15:41 CEST 2024 Thread[#1290,Thread-53,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+Fri Oct 25 16:15:41 CEST 2024 Thread[#1290,Thread-53,5,main] Cleanup action starting
+ERROR XBM0I: Directory work/database cannot be removed.
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:299)
+	at org.apache.derby.shared.common.error.StandardException.newException(StandardException.java:294)
+	at org.apache.derby.iapi.services.monitor.Monitor.removePersistentService(Monitor.java:663)
+	at org.apache.derby.impl.jdbc.EmbedConnection.removePersistentService(EmbedConnection.java:4014)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(EmbedConnection.java:620)
+	at org.apache.derby.iapi.jdbc.InternalDriver.getNewEmbedConnection(InternalDriver.java:630)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:400)
+	at org.apache.derby.iapi.jdbc.InternalDriver$LoginCallable.call(InternalDriver.java:376)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Cleanup action completed
+----------------------------------------------------------------
+Fri Oct 25 16:15:44 CEST 2024:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.16.1.1 - (1901046): instance 38c30028-0192-c3ff-2142-0000039dc448 
+on database directory C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app\work\database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@33909752 
+Loaded from file:/C:/Users/nuria/.m2/repository/org/apache/derby/derby/10.16.1.1/derby-10.16.1.1.jar
+java.vendor=Eclipse Adoptium
+java.runtime.version=21.0.4+7-LTS
+user.dir=C:\Users\nuria\Desktop\master\App\sinModificar\store-app\store-app
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
