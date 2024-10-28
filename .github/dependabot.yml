@@ -4,3 +4,19 @@ updates:
     directory: "/store-app" # Directorio donde está tu archivo de configuración de dependencias
     schedule:
       interval: "daily" # Frecuencia de las actualizaciones
+      open-pull-requests-limit: 30 
+      allow:
+      - dependency-name: "org.apache.commons:commons-lang3"
+      - dependency-name: "org.apache.commons:commons-collections4"
+      - dependency-name: "org.apache.commons:commons-logging"
+      - dependency-name: "org.apache.commons:commons-email"
+      - dependency-name: "org.apache.commons:commons-pool2"
+      - dependency-name: "org.apache.commons:commons-dbcp2"
+      - dependency-name: "org.apache.commons:commons-net"
+      - dependency-name: "commons-fileupload:commons-fileupload"
+      - dependency-name: "org.apache.httpcomponents:httpclient"
+      - dependency-name: "org.apache.logging.log4j:log4j-core" # Log4j
+      - dependency-name: "org.springframework:spring-core"     # Spring framework
+      - dependency-name: "org.springframework:spring-web"
+      - dependency-name: "com.fasterxml.jackson.core:jackson-databind" # Fasterxml
+      - dependency-name: "org.webjars:jquery"                 # Jquery (si usas la versión de WebJars)
